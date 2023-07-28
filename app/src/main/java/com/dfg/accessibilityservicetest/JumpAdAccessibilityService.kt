@@ -31,7 +31,10 @@ class JumpAdAccessibilityService : AccessibilityService() {
         }
     }
 
-     /*override fun onServiceConnected() {
+    /**
+     * 动态配置代码不注释，和静态配置一起使用。不管在不在微信界面，都会登录。
+     */
+    override fun onServiceConnected() {
          super.onServiceConnected()
          val serviceInfo = AccessibilityServiceInfo().apply {
              eventTypes = AccessibilityEvent.TYPES_ALL_MASK
@@ -41,7 +44,7 @@ class JumpAdAccessibilityService : AccessibilityService() {
              notificationTimeout = 10
          }
          setServiceInfo(serviceInfo)
-     }*/
+     }
 
     override fun onInterrupt() {
         Log.d(TAG, "onInterrupt")
