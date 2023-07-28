@@ -4,7 +4,7 @@
     android:accessibilityFeedbackType="feedbackAllMask"
     android:accessibilityFlags="flagDefault"
     android:canRetrieveWindowContent="true"
-    android:description="@string/app_name"
+    android:description="@string/description"
     android:notificationTimeout="100"
     android:packageNames="com.tencent.mm"
     android:settingsActivity="com.dfg.accessibilityservicetest.MainActivity" />
